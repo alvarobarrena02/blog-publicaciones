@@ -1,0 +1,1 @@
+CREATE TABLE `hito`.`registro` (`id` INT NOT NULL AUTO_INCREMENT , `email` VARCHAR(100) NOT NULL , `password` VARCHAR(200) NOT NULL , `titulo` VARCHAR(100) NOT NULL , `contenido` VARCHAR(200) NOT NULL , `fecha` DATE NOT NULL , `autor` VARCHAR(80) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;

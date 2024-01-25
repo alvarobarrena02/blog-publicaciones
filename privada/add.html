@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/styles.css">
+      <title>Formulario de registro</title>
+  </head>
+  <body>
+        <div class="container">
+            <h1 class="text-uppercase text-center fw-bold p-3">Formulario de registro</h1>
+            <form class="form-control" action="add.php" method="post">
+                <label for="email" class="fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control m-2" id="email" name="email" placeholder="Correo electrónico" required>
+
+                <label for="password" class="fw-bold">Contraseña</label>
+                <input type="password" class="form-control m-2" id="password" name="password" placeholder="Contraseña" required>
+
+                <label for="title" class="fw-bold">Título del blog</label>
+                <input type="text" class="form-control m-2" id="title" name="title" placeholder="Título">
+
+                <label for="content" class="fw-bold">Descripción del blog</label>
+                <textarea class="form-control m-3" id="content" name="content" rows="3"></textarea>
+
+                <label for="fecha" class="fw-bold">Fecha de publicación</label>
+                <input type="date" class="form-control m-2" id="fecha" name="fecha">
+
+                <label for="autor" class="fw-bold">Autor del blog</label>
+                <input type="text" class="form-control m-2" id="autor" name="autor" placeholder="Autor">
+
+                <label for="imagen" class="fw-bold">Imagen del blog</label>
+                <input type="file" class="form-control m-2" id="imagen" name="imagen">
+
+                <button type="submit" class="btn btn-primary">Registrar publicación</button>
+            </form>
+            <a href='../index.php' class='btn btn-success fw-bold p-2 m-2'>Volver a inicio</a>
+        </div>
+    <!--Cargar el archivo jquery-->
+    <script type="text/javascript" src="../jquery/jquery-3.6.3.min.js"></script>
+    <!--Cargar el archivo javascript de bootstrap-->
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

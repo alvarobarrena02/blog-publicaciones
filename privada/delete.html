@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <title>Eliminar registro</title>
+  </head>
+  <body>
+        <div class="container">
+            <h1 class="text-uppercase text-center fw-bold p-3">Eliminar registro</h1>
+            <form class="form-control" action="delete.php" method="post">
+                <label for="email" class="fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control m-2" id="email" name="email" placeholder="Correo electrónico" required>
+                <button type="submit" class="btn btn-primary">Eliminar registro</button>
+            </form>
+            <a href='../index.php' class='btn btn-success fw-bold p-2 m-2'>Volver a inicio</a>
+        </div>
+    <!--Cargar el archivo jquery-->
+    <script type="text/javascript" src="../jquery/jquery-3.6.3.min.js"></script>
+    <!--Cargar el archivo javascript de bootstrap-->
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
